@@ -11,7 +11,11 @@ library("ChIPseqSpikeInFree")
 #read in sample details
 metaFile <- "sample_meta_h3k4me3.txt"
 #read in bam files
-bams = c("H3K4me3_WT_n1.bam","H3K4me3_WT_n2.bam","H3K4me3_WT_n3.bam","H3K4me3_PreM_n1.bam","H3K4me3_PreM_n2.bam","H3K4me3_PreM_n3.bam","H3K4me3_Mal_n1.bam","H3K4me3_Mal_n2.bam","H3K4me3_Mal_n3.bam")
+bams = c("H3K4me3_WT_n1.bam","H3K4me3_WT_n2.bam",
+         "H3K4me3_WT_n3.bam","H3K4me3_PreM_n1.bam",
+         "H3K4me3_PreM_n2.bam","H3K4me3_PreM_n3.bam",
+         "H3K4me3_Mal_n1.bam","H3K4me3_Mal_n2.bam",
+         "H3K4me3_Mal_n3.bam")
 
 #run the analysis
 #exclude X, Y, MT and rDNA
