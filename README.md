@@ -55,6 +55,8 @@ bowtie2 -x ref_genome -1 s01_unmapped_R1.fastq -2 s01_unmapped_R2.fastq -S s01_s
 #### Calculation of normalisation factors 
 - Spike in normalisation factors are calculated based on the number of uniquely aligned reads to spike in genome in each sample and separately for each factor of interest or input control. 
 
+E.g. 
+
 
 ### ChIP-seq in-silico spike-in free normalisation
 
@@ -62,4 +64,13 @@ ChIPseqSpikeInFree is an in- silico normalisation method that does not rely on e
 
 Reference: 
 
+1. Jin, H. *et al*. (2020). ChIPseqSpikeInFree: a ChIP-seq normalization approach to reveal global changes in histone modifications without spike-in. Bioinformatics (Oxford, England), 36(4), 1270–1272. https://doi.org/10.1093/bioinformatics/btz720
+
+2. Github repository - https://github.com/stjude/ChIPseqSpikeInFree
+
 <img width="600" alt="Screen Shot 2022-01-14 at 2 51 51 am" src="https://user-images.githubusercontent.com/36429476/149363181-711a649c-b0aa-45ad-a8d3-681c5593d127.png">
+
+
+Normalisation factors calculated using either of the above two methods can be incorporated for downstream analysis as follows. 
+
+
